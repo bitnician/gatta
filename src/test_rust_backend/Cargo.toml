@@ -11,4 +11,25 @@ crate-type = ["cdylib"]
 [dependencies]
 candid = "0.10"
 ic-cdk = "0.16"
-ic-cdk-timers = "0.10" # Feel free to remove this dependency if you don't need timers
+getrandom = { version = "0.2.15", features = ["custom"] }
+rand_chacha = { version = "0.3.1" }
+ic-cdk-timers = "0.10.0"
+sha2 = "0.10.6"
+
+
+# web3 = "0.19.0"      
+hex = "0.4"    
+base64 = "0.21"  
+# Use `ic-alloy` hosted on GitHub. `ic-alloy` is not deployed to crates.io yet
+alloy = { git = "https://github.com/ic-alloy/ic-alloy.git", tag = "v0.3.5-icp.0", default-features = false, features = [
+  "icp",
+  "sol-types",
+  "json",
+  "contract",
+] }
+
+rand = "0.8" 
+
+
+
+

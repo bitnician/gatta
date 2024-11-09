@@ -4,22 +4,19 @@
       "candid": "src/test_rust_backend/test_rust_backend.did",
       "package": "test_rust_backend",
       "type": "rust"
-    },
-    "test_rust_frontend": {
-      "dependencies": [
-        "test_rust_backend"
-      ],
-      "source": [
-        "src/test_rust_frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "test_rust_frontend"
     }
   },
   "defaults": {
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "networks": {
+    "ic": {
+      "providers": [
+        "https://ic0.app"
+      ]
     }
   },
   "output_env_file": ".env",
